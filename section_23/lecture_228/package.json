@@ -1,0 +1,14 @@
+{
+  "name": "lecture_228",
+  "version": "1.0.0",
+  "description": "Just starting out",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "M2N",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <title>To Do List</title>
+     </head>
+     <body>
+         <h1>To Do List</h1>
+         <ul>
+             <li>"New" - Add a 'To Do'</li>
+             <li>"List" - List all 'To Dos'</li>
+             <li>"Quit" - Quit App</li>
+         </ul>
+     </body>
+</html>
+ 
+<script type="text/javascript">
+    //Here is my Javascript Code
+    var todos = ["Buy a dog"];
+     
+    var input = prompt("What would you like to do?");
+     
+    while(input !== "Quit"){
+        //handle input
+        if (input === "List") {
+            console.log(todos);
+        } else if(input === "New") {
+            //ask for new todo
+            var newTodo = prompt("Enter new todo");
+            //add to todos array
+            todos.push(newTodo);
+        }
+        //ask again for new input
+        input = prompt("What would you like to do?");
+    }
+    console.log("OK, you quit the App");
+</script>

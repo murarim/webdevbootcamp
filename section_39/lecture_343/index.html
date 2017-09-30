@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+    </head>
+    <body>
+        <h1>Home Page</h1>
+    </body>
+    <script type="text/javascript">
+        var Vehicle = function(make, model, year) {
+            this.make = make;
+            this.model = model;
+            this.year = year;
+            this.isRunning = false;
+        };
+        
+        Vehicle.prototype.turnOn = function() {
+            this.isRunning = true;
+        };
+        
+        Vehicle.prototype.turnOff = function() {
+            this.isRunning = false;
+        };
+        
+        Vehicle.prototype.honk = function() {
+            if (this.isRunning) {
+                console.log("Beep");
+            }
+        }
+    </script>
+</html>
